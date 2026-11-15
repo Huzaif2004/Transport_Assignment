@@ -24,6 +24,6 @@ public class OpenApiConfig {
                 .servers(List.of(
                         new Server()
                                 .url("https://transportassignment-production.up.railway.app")));
-        ;
+        
     }
 }
