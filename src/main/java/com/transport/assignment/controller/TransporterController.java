@@ -5,6 +5,8 @@ import com.transport.assignment.dto.response.InputSavedResponse;
 import com.transport.assignment.service.InputService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,6 +28,6 @@ public class TransporterController {
         InputSavedResponse response =
                 inputService.saveInput(request);
 
-        return ResponseEntity.ok(response);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 }
