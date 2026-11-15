@@ -14,8 +14,7 @@ There are two endpoints: one to submit lanes and transporter quotes (stored in M
 6. [API reference](#api-reference)
 7. [Data model](#data-model)
 8. [How the solver works](#how-the-solver-works)
-9. [Testing](#testing)
-10. [Deployment notes](#deployment-notes)
+9. [Deployment notes](#deployment-notes)
 
 ## The problem
 
